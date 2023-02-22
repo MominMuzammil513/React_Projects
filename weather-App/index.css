@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    border: 2px solid;
+    height: 344px;
+    width: 298px;
+    padding: 4vh;
+    background-color: black;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.input-search {
+    border: none;
+    height: 27px;
+    width: 209px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.degree {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.search-btn {
+    height: 29px;
+    width: 29px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+}
+
+.search-btn:hover {
+    background-color: rgb(187, 181, 181);
+}
+
+.details {
+    color: white;
+}
+
+.degree-label {
+    color: white;
+}
+
+.cloud-svg {
+    height: 40px;
+    width: 40px ;
+}
