@@ -1,17 +1,25 @@
+import { useState } from "react";
 import KeepHeader from "./KeepHeader";
-
+import Library from "./Library";
+import Note from "./Note";
 
 const KeepNote = () => {
+
+    const [item, setItem] = useState([])
+
+    const addNote = (note) => {
+        setItem((preValues) => {
+            return [...preValues, note]
+        })
+    }
+
+
     return (
         <>
             <KeepHeader />
-            <div className="lock">
-                <div className="input-container">
-                    <div className="input-note">
-                        <input type="text" placeholder="Enter your note here..." />
-                    </div>
-                </div>
-            </div>
+            <Note passNote={addNote} />
+            <Library sItem={setItem} Itm={item} />
+
         </>
     )
 }

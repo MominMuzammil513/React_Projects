@@ -7,7 +7,7 @@ const KeepHeader = () => {
                 <header className="header">
                     <div className="logo-div">
                         <img src={logo} />
-                        <h1>Momin Keeps</h1>
+                        <h1 className='h1'>Momin Keeps</h1>
                     </div>
                     <div className="menu"></div>
                 </header>
